@@ -3,6 +3,13 @@ import { Card, CardImg, CardText, CardBody,CardTitle } from 'reactstrap';
 
 class DishDetail extends Component {
 
+    componentDidMount(){
+        console.log('Dishdetail component componentDidMount');
+    }
+
+    componentDidUpdate(){
+        console.log('Dishdetail component componentDidUpdate method invoked');
+    }
     renderDish(dish){
         if(dish != null){
             return(
@@ -56,6 +63,7 @@ class DishDetail extends Component {
         }
     }
     render(){
+        console.log('Dishdetail Component render invoked');
         return(
             <div className="row">
                 <div className='col-12 col-md-5 m-1'>
