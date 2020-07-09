@@ -116,7 +116,7 @@ import { baseUrl } from '../shared/baseUrl';
                                     dishId={this.props.dish.id}
                                     showModal={this.showModal}
                                 />
-                            <CommentForm hideModal={this.hideModal} show={this.state.show} dishId={this.props.dish.id} addComment={this.props.postComment}/>
+                            <CommentForm hideModal={this.hideModal} show={this.state.show} dishId={this.props.dish.id} postComment={this.props.postComment}/>
                         </div>
                     </div>
                 );
