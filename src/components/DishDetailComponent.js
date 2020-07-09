@@ -24,7 +24,7 @@ import { baseUrl } from '../shared/baseUrl';
         }
     }
 
-    function RenderComments({comments, addComment, dishId, showModal}){
+    function RenderComments({comments, postComment, dishId, showModal}){
         if(comments != null) {
             const comm = comments.map((comm) => {
                 return(
@@ -112,11 +112,11 @@ import { baseUrl } from '../shared/baseUrl';
                         <div className='row'>
                             <RenderDish dish={this.props.dish} />
                             <RenderComments comments={this.props.comments}
-                                    addComment={this.props.addComment}
+                                    postComment={this.props.postComment}
                                     dishId={this.props.dish.id}
                                     showModal={this.showModal}
                                 />
-                            <CommentForm hideModal={this.hideModal} show={this.state.show} dishId={this.props.dish.id} addComment={this.props.addComment}/>
+                            <CommentForm hideModal={this.hideModal} show={this.state.show} dishId={this.props.dish.id} addComment={this.props.postComment}/>
                         </div>
                     </div>
                 );
